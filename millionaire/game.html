@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Who Wants to be a Millionaire</title>
+</head>
+<body>
+	<script language='javascript'>
+		var correctAnswer;
+		var currentRound = 1;
+		const var lastRound = 15;
+
+		function changeQuestion(newQuestion, newChoices) {
+			var choices = document.getElementsByClassName("ansButton");
+			var question = document.getElementById("Q");
+
+			for (var i = 0; i < 4; i++)
+				choices[i].innerHTML = newChoices[i];
+
+			question.innerHTML = newQuestion;
+		}
+
+		function verifyAnswer(answer) {
+			if (answer == correctAnswer) {
+				if (currentRound == lastRound)
+					displayWin();
+				else {
+					displayCorrect();
+					changeQuestion(getNewQuestion(), getNewChoices());
+				}
+			} else
+				displayLose();
+		}
+
+		function displayWin() {
+
+		}
+
+		function displayCorrect() {
+
+		}
+
+		function displayLose() {
+
+		}
+	</script>
+	<link rel="stylesheet" href="game.css" type="text/css">
+	<p id=Q>[insert question here]</p>
+	<div class="buttonHolder">
+		<button class="ansButton" id=A>A.</button>
+		&nbsp; &nbsp; &nbsp;
+		<button class="ansButton" id=B>B.</button>
+		<br><br><br>
+		<button class="ansButton" id=C>C.</button>
+		&nbsp; &nbsp; &nbsp;
+		<button class="ansButton" id=D>D.</button>
+	</div>
+</body>
+</html>

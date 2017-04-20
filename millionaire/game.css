@@ -1,0 +1,91 @@
+#game {
+	text-align: center;
+}
+
+body {
+	background-image: url("background.png");
+	background-size: 100% 100%;
+}
+
+
+#question {
+	text-align: center;
+	color: white;
+	font-size: 20px;
+}
+
+/*
+.buttonHolder {
+	text-align: center;
+}
+*/
+
+.ansButton {
+	font-size: 20px;
+	width: 200px;
+	height: 100px;
+	border: none;
+	color: white;
+	vertical-align: top;
+	background-color: #99ccff;
+}
+
+button:hover {
+	background-color: #ff9900;
+	color: black;
+}
+
+.walkButton {
+	font-size: 16px;
+	width: 100px;
+	height: 50px;
+	border: none;
+	color: white;
+	background-color: #99ccff;
+}
+
+
+#levels > ul {
+	font-size: 16px;
+	color: white;
+	background-color: #99ccff;
+	float: right;
+	border: none;
+	list-style: none;
+	text-align: left;
+	padding: 5;
+}
+
+#lifelines {
+	width: 100%;
+	display:inline-block;
+	text-align: center; 
+}
+
+#lifelines > button {
+	font-size: 16px;
+	width: 100px;
+	height: 50px;
+	border: none;
+	color: white;
+	background-color: #99ccff;
+	vertical-align: top;
+}
+
+#lifelines > button:hover {
+	background-color: #ff9900;
+	color: black;
+}
+
+#phone-screen, #audience-screen {
+	visibility: hidden;
+    position: fixed;
+    width: 50%;
+    height: 50%;
+    margin: -25% auto auto -25%;
+    top: 50%;
+    left: 50%;
+    border-style: solid;
+	background-color: white;
+    text-align: center;
+}

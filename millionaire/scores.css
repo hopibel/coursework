@@ -1,0 +1,32 @@
+table, td {
+	text-align: center;
+}
+
+table {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+tr {
+	background-color: #e6e6ff;
+}
+
+tr:nth-child(even) {
+	background-color: #99ccff;
+}
+
+.header {
+	background-color: #1a8cff;
+	color: #ffffff;
+}
+.rank {
+	width: 40px;
+}
+
+.name {
+	width: 150px;
+}
+
+.score {
+	width: 250px;	
+}

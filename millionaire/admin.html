@@ -1,0 +1,66 @@
+<html>
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<head>
+		<title>Question editor - Who Wants to be a Millionaire</title>
+		<script src="../jquery-1.12.2.min.js"></script>
+		<script src="admin.js"></script>
+		<link rel="stylesheet" href="admin.css" type="text/css">
+	</head>
+	<body>
+		<p id="status">Loading...</p>
+		<form id="form" action="admin.php">
+			Difficulty:
+			<select name="difficulty">
+				<option value="easy">Easy</option>
+				<option value="medium">Medium</option>
+				<option value="hard">Hard</option>
+			</select>
+			<br>
+			ID number:
+			<input type="text" name="id"> (Not used by Insert)
+			<br>
+			Question:
+			<input type="text" name="question">
+			<br>
+			A: <input type="text" name="a"><br>
+			B: <input type="text" name="b"><br>
+			C: <input type="text" name="c"><br>
+			D: <input type="text" name="d"><br>
+			Answer:
+			<input type="radio" name="answer" value="a" checked>A
+			<input type="radio" name="answer" value="b">B
+			<input type="radio" name="answer" value="c">C
+			<input type="radio" name="answer" value="d">D
+			<br><br>
+			Search: <br>
+			<input type="checkbox" name="ignore-diff" value="on">Ignore difficulty<br>
+			<input type="checkbox" name="ignore-answer" value="on">Ignore answer<br><br>
+
+			<input type="submit" id="search" value="Search">
+			<input type="submit" id="insert" value="Insert">
+			<input type="submit" id="update" value="Update">
+			<input type="submit" id="delete" value="Delete">
+			<input type="reset" id="clear" value="Clear">
+		</form>
+		<br>
+		<div>
+			<p>Click a row to load it into the form</p>
+			<table id="table" border=1>
+				<thead>
+					<tr>
+						<th>id</th>
+						<th>difficulty</th>
+						<th>question</th>
+						<th>a</th>
+						<th>b</th>
+						<th>c</th>
+						<th>d</th>
+						<th>answer</th>
+					</tr>
+				</thead>
+				<tbody>
+				</tbody>
+			</table>
+		</div>
+	</body
+</html>
